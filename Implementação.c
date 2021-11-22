@@ -1,10 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include <string.h>
-//Analise e Projeto de Algoritimos - TP01
-//Aluno: Jo„o Vitor de Faria
-//Matricula:2019006030
-
 
 //funcao que retorna a combinacao mais lucrativa entre:
 //1)Combinacao incluindo item atual;
@@ -53,7 +49,7 @@ unsigned int preencheMatrizResultado(int** matriz_resultado, unsigned int orcame
 int knapsack(unsigned int orcamento, unsigned  int num_items, unsigned int custo[], unsigned int lucro[])
 {
 	unsigned int i;
-	//declaraÁ„o de uma matriz, onde, para um dano numero de placas e orcamento, estara salva a opcao mais lucrativa
+	//declara√ß√£o de uma matriz, onde, para um dano numero de placas e orcamento, estara salva a opcao mais lucrativa
 	int** matriz_resultado;
 
 	//alocacao dinamica da matriz
@@ -98,7 +94,7 @@ int main(int argc, char * argv[])
 		fgets(nome[i], 20, stdin);
 		scanf("%d %d", &(custo[i]), &(lucro[i]));
 	}
-	//Nao eh necess·rio enviar o vetor com o nomes das placas.
+	//Nao eh necess√°rio enviar o vetor com o nomes das placas.
 	//Pois o algoritmo nao considera uma mesma placa duas vezes, a nao ser que tenha duas entradas com custos e lucros iguais
 	printf("%d\n", knapsack(orcamento, num_items , custo, lucro ));
 
